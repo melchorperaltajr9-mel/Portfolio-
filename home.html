@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Melchor Peralta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #ccc; text-align: center; }
+        .content { padding: 20px; max-width: 500px; margin: auto; }
+        .profile-pic { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; }
+        .contact { font-size: 16px; margin-top: 20px; }
+        .nav { background: #333; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; display: flex; justify-content: space-around; }
+        .nav a { color: white; text-decoration: none; font-size: 14px; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Hello!</h1>
+        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="profile-pic">
+        <p>I’m <b>Melchor Peralta</b>, welcome to my portfolio website. Let’s connect below 👇</p>
+
+        <div class="contact">
+            📧 Email: melchor@example.com <br>
+            ☎️ Phone: +63 912 345 6789 <br>
+            🔗 LinkedIn: linkedin.com/in/melchor <br>
+            🐦 Twitter: @melchor
+        </div>
+    </div>
+
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/profile">Profile</a>
+        <a href="/about">About</a>
+    </div>
+</body>
+</html>
